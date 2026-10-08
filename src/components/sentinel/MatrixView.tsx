@@ -53,7 +53,7 @@ export default function MatrixView() {
           </div>
         </div>
       ) : (
-        <div className={`grid flex-1 gap-2.5 ${layout === "2x2" ? "grid-cols-1 md:grid-cols-2" : "grid-cols-2 lg:grid-cols-3"}`}>
+        <div className={`grid flex-1 items-start gap-2.5 ${layout === "2x2" ? "grid-cols-1 md:grid-cols-2" : "grid-cols-2 lg:grid-cols-3"}`}>
           {cameras.map((camera) => (
             <div key={camera.camera_id} className="glass-surface rounded-lg p-2">
               <CameraTile

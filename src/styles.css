@@ -34,9 +34,9 @@
   --color-teal: var(--teal);
   --color-amber: var(--amber);
   --color-rec: var(--rec);
-  --font-sans: "Inter", sans-serif;
-  --font-display: "Space Grotesk", "Inter", sans-serif;
-  --font-mono: "JetBrains Mono", monospace;
+  --font-sans: "Rubik", sans-serif;
+  --font-display: "Space Mono", monospace;
+  --font-mono: "Space Mono", monospace;
 }
 
 :root {
@@ -89,7 +89,7 @@ body {
   background-image: radial-gradient(ellipse at top left, oklch(0.275 0.055 261 / 19%), transparent 42%),
     radial-gradient(ellipse at 80% 0%, oklch(0.255 0.062 207 / 11%), transparent 38%);
   color: var(--color-foreground);
-  font-family: "Inter", sans-serif;
+  font-family: "Rubik", sans-serif;
   font-feature-settings: "ss01" on;
 }
 
@@ -115,11 +115,11 @@ button {
 }
 
 .font-display {
-  font-family: "Space Grotesk", "Inter", sans-serif;
+  font-family: "Space Mono", monospace;
 }
 
 .font-mono {
-  font-family: "JetBrains Mono", monospace;
+  font-family: "Space Mono", monospace;
 }
 
 .glass-surface {

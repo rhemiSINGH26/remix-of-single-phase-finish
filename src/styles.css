@@ -34,9 +34,9 @@
   --color-teal: var(--teal);
   --color-amber: var(--amber);
   --color-rec: var(--rec);
-  --font-sans: "Inter", sans-serif;
-  --font-display: "Space Grotesk", "Inter", sans-serif;
-  --font-mono: "JetBrains Mono", monospace;
+  --font-sans: "Rubik", sans-serif;
+  --font-display: "Space Mono", monospace;
+  --font-mono: "Space Mono", monospace;
 }
 
 :root {

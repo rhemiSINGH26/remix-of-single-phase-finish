@@ -63,7 +63,7 @@ export function CameraTile({
 }: {
   camera: CameraFeed;
   className?: string;
-  onFocus?: () => void;
+  onFocus?: (() => void) | undefined;
   focused?: boolean;
   compact?: boolean;
 }) {

@@ -1,8 +1,8 @@
 import { useEffect, useMemo, useState } from "react";
 import { motion } from "framer-motion";
 import { Activity, GitBranch, MapPin } from "lucide-react";
-import { getReid } from "@/lib/api";
-import { DEMO_RESULTS, useSentinel } from "@/store";
+import { DEMO_RESULTS, getReid } from "@/lib/api";
+import { useSentinel } from "@/store";
 import type { CorrelatedTrack } from "@/types/sentinel";
 import { Chip, SectionLabel, StatBlock, formatStamp } from "./shared";
 

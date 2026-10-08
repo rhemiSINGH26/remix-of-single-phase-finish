@@ -146,6 +146,7 @@ export default function SearchView() {
     minConfidence,
     selectedCameraIds,
     activeObjectClasses,
+    timeRange,
     recentQueries,
   } = store;
   const [input, setInput] = useState(query);

@@ -41,9 +41,9 @@ export interface LearnedLocation {
 }
 
 export interface ParsedQuery {
-  object_class?: string;
+  object_class?: string | undefined;
   attributes: string[];
-  location?: string;
+  location?: string | undefined;
   cameras: string[];
   time_range: TimeRange;
 }

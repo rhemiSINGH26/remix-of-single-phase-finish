@@ -58,7 +58,10 @@ export default function MatrixView() {
             <div key={camera.camera_id} className="glass-surface rounded-lg p-2">
               <CameraTile
                 camera={camera}
-                onFocus={layout === "2x2" ? undefined : () => setFocusId(camera.camera_id)}
+                onFocus={() => {
+                  setFocusId(camera.camera_id);
+                  set({ layout: "focus" });
+                }}
                 className={layout === "2x2" ? "aspect-video" : "aspect-video"}
               />
               <div className="mt-2 flex items-center justify-between gap-2 px-0.5">

@@ -42,7 +42,7 @@ const SEED_RESULTS: SearchResultItem[] = [
 
 const sleep = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms));
 
-function parseQuery(query: string, cameras: CameraFeed[], learned: LearnedLocation[]): ParsedQuery {
+export function parseQuery(query: string, cameras: CameraFeed[], learned: LearnedLocation[]): ParsedQuery {
   const q = query.toLowerCase();
   const object_class = q.includes("bike") || q.includes("bicycle") ? "Bicycle" : q.includes("truck") ? "Truck" : q.includes("person") || q.includes("man") || q.includes("woman") ? "Person" : q.includes("car") || q.includes("vehicle") ? "Car" : undefined;
   const attributes = ["red", "white", "black", "blue", "silver", "gray", "grey"].filter((colour) => q.includes(colour));

@@ -86,7 +86,7 @@ export default function Workspace() {
                 type="button"
                 onClick={() => set({ view: item.view })}
                 aria-current={active ? "page" : undefined}
-                className={`flex items-center gap-1.5 rounded-md px-3 py-1.5 text-[13px] font-medium transition-colors ${
+                className={`flex items-center gap-1.5 rounded-md px-3 py-1.5 font-display text-[12.5px] font-medium transition-colors ${
                   active ? "bg-cyan/15 text-cyan" : "text-muted-foreground hover:bg-white/5 hover:text-foreground"
                 }`}
               >

@@ -89,7 +89,7 @@ function ResultCard({
                   {item.camera_name} · t+{item.timestamp.toFixed(1)}s
                 </span>
               </div>
-              <p className="mt-1 truncate text-[13px] font-medium text-foreground">{item.description}</p>
+              <p className="mt-1 truncate font-display text-[12.5px] font-bold text-foreground">{item.description}</p>
             </div>
             <div className="text-right">
               <div className="font-mono text-base font-semibold text-cyan">{item.confidence}%</div>

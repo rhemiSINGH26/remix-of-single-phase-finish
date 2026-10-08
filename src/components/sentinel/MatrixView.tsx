@@ -67,7 +67,7 @@ export default function MatrixView() {
               <div className="mt-2 flex items-center justify-between gap-2 px-0.5">
                 <div className="flex min-w-0 items-center gap-1.5">
                   <StatusDot status={camera.status} />
-                  <span className="truncate text-[12px] font-medium text-foreground">{camera.name}</span>
+                  <span className="truncate font-display text-[12px] font-bold text-foreground">{camera.name}</span>
                 </div>
                 <button
                   type="button"

@@ -141,7 +141,7 @@ export default function IngestionView() {
               event.preventDefault();
               setDropActive(false);
               setFile(event.dataTransfer.files?.[0] ?? null);
-              setErrors((current) => ({ ...current, file: undefined }));
+              setErrors(({ file: _dropped, ...rest }) => rest);
             }}
             className={`mt-3 flex cursor-pointer flex-col items-center justify-center gap-2 rounded-lg border border-dashed px-6 py-7 text-center transition-colors ${
               dropActive ? "border-cyan bg-cyan/10" : "border-white/15 bg-black/20 hover:border-cyan/50"
@@ -153,7 +153,7 @@ export default function IngestionView() {
               className="sr-only"
               onChange={(event) => {
                 setFile(event.target.files?.[0] ?? null);
-                setErrors((current) => ({ ...current, file: undefined }));
+                setErrors(({ file: _dropped, ...rest }) => rest);
               }}
             />
             <UploadCloud className={`h-6 w-6 ${dropActive ? "text-cyan" : "text-telem-muted"}`} />

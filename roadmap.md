@@ -1,0 +1,3 @@
+- [ ] Build the SENTINEL visual system, operations header, and four interactive views.
+- [ ] Add typed mock API workflows for search, location learning, re-identification, and camera indexing.
+- [ ] Verify homepage metadata, navigation, all four views, and the current preview build.
